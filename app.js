@@ -34,7 +34,7 @@ function fakeAjaxCall(email) {
 // Fetch real data from public API and update the DOM
 function fetchPostsWithJQuery() {
   $.ajax({
-    url: "https://jsonplaceholder.typicode.com/posts?_limit=5",
+    url: "https://jsonplaceholder.typicode.com/posts?_limit=10",
     method: "GET",
     success: function (posts) {
       const list = $("#posts-list");
@@ -49,8 +49,6 @@ function fetchPostsWithJQuery() {
 }
 
 fetchPostsWithJQuery();
-
-fetchPosts();
 
 // jQuery usage example
 $(document).ready(function () {
